@@ -10,7 +10,7 @@ const MyImages = ({ add_image }) => {
 	// function provides a mechanism to upload images, asynchronously, and updates the UI accordingly based on the upload status.
 	const image_upload = async (e) => {
 		// Check if there are files selected for upload
-		if (e.target.files?.length > 0) {
+		if (e.target.files.length > 0) {
 			const formData = new FormData();
 			// Append the selected image file to the FormData object
 			formData.append('image', e.target.files[0]);

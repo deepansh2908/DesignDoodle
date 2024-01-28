@@ -2,7 +2,7 @@ import React from 'react';
 
 // this component generates a grid of images based on the images prop. Each image is wrapped in a <div> that includes an onClick event handler to trigger different actions based on the type prop. 
 const Image = ({ add_image, images, type, setImage }) => {
-	return (
+	return images && (
 		<div className="grid grid-cols-2 gap-2">
 			{/* rendering a div for each image in images array */}
 			{images.map((item, i) => (
