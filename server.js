@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === 'local') {
 } else {
 	app.use(
 		cors({
-			origin: 'https://design-doodle-git-main-deepansh-guptas-projects.vercel.app/',
+			origin: 'https://design-doodle-git-main-deepansh-guptas-projects.vercel.app',
 			credentials: true,
 		})
 	);
