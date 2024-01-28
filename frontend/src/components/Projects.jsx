@@ -32,7 +32,7 @@ const Projects = ({ type, design_id }) => {
 	};
 	return (
 		<div className="h-[88vh] overflow-x-auto flex justify-start items-start scrollbar-hide w-full">
-			{designs && (<div
+			<div
 				className={
 					type
 						? 'grid grid-cols-2 gap-2 mt-5 w-full'
@@ -50,7 +50,7 @@ const Projects = ({ type, design_id }) => {
 							/>
 						)
 				)}
-			</div>)}
+			</div>
 		</div>
 	);
 };
