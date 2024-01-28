@@ -14,15 +14,22 @@
 * MongoDB as the database
 * Cloudinary for uploading images
 
-## Documentation for API endpoints
-* POST /api/create-user-design   Creates a new design in the database
-* GET /api/user-design/:design_id   retreives a specific user design 
-* PUT /api/update-user-design/:design_id   updates a specific user design
-* POST /api/add-user-image   uploads the image to cloudinary and stores its url in database
-* GET /api/get-user-image   gets all the images uploaded by the user
-* PUT /api/delete-user-image/:design_id   deletes a specific design
-* GET /api/user-designs   gets all the designs created by user
-* POST /api/user-register   registers a new user
-* POST /api/user-login   for user login
+## Documentation for API endpoints (CRUD operations)
+* POST /api/create-user-design     creates a new design in the database
+* GET /api/user-design/:design_id     retreives a specific user design 
+* PUT /api/update-user-design/:design_id     updates a specific user design
+* POST /api/add-user-image     uploads the image to cloudinary and stores its url in database
+* GET /api/get-user-image     gets all the images uploaded by the user
+* PUT /api/delete-user-image/:design_id     deletes a specific design
+* GET /api/user-designs     gets all the designs created by user
+* POST /api/user-register     registers a new user
+* POST /api/user-login     for user login
+
+## Live video demo
+
+
+
+https://github.com/deepansh2908/DesignDoodle/assets/133380229/05d8c10f-691f-4fc3-ae04-c2172f2aa809
+
 
 
