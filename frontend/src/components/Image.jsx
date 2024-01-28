@@ -5,7 +5,7 @@ const Image = ({ add_image, images, type, setImage }) => {
 	return (
 		<div className="grid grid-cols-2 gap-2">
 			{/* rendering a div for each image in images array */}
-			{images.map((item, i) => (
+			{images?.map((item, i) => (
 				<div
 					key={i}
 					onClick={() =>

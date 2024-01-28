@@ -447,7 +447,7 @@ const Main = () => {
 									className="w-auto relative h-auto overflow-hidden"
 								>
 									{/* This maps over the components array and renders a CreateComponent for each component. */}
-									{components.map((c, i) => (
+									{components?.map((c, i) => (
 										<CreateComponent
 											key={i}
 											info={c}

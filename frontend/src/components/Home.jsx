@@ -80,7 +80,7 @@ const Home = () => {
 						transitionDuration={500}
 					>
 						{/* maps over the designs array using the map function to render each design as an Item component. */}
-						{designs.map((d, i) => (
+						{designs?.map((d, i) => (
 							<Item
 								delete_design={delete_design}
 								design={d}
