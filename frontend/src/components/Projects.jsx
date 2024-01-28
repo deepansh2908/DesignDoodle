@@ -39,7 +39,7 @@ const Projects = ({ type, design_id }) => {
 						: 'grid grid-cols-4 gap-2 mt-5 w-full'
 				}
 			>
-				{designs?.map(
+				{designs.map(
 					(d, i) =>
 						d._id !== design_id && (
 							<Item
