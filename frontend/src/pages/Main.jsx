@@ -331,12 +331,12 @@ const Main = () => {
 		const get_design = async () => {
 			try {
 				const { data } = await api.get(`/api/user-design/${design_id}`);
-				console.log(data);
+				//console.log(data);
 				//design is an array of components
 				const { design } = data;
 
 				//For each item in the design array (ie each component), certain properties and functions are added
-				for (let i = 0; i < design.length; i++) {
+				for (let i = 0; i < design?.length; i++) {
 					design[i].setCurrentComponent = (a) =>
 						setCurrentComponent(a);
 					design[i].moveElement = moveElement;
@@ -449,7 +449,7 @@ const Main = () => {
 									className="w-auto relative h-auto overflow-hidden"
 								>
 									{/* This maps over the components array and renders a CreateComponent for each component. */}
-									{components.map((c, i) => (
+									{components?.map((c, i) => (
 										<CreateComponent
 											key={i}
 											info={c}
