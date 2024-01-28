@@ -1,7 +1,7 @@
 //the code sets up an Axios instance (api here) to make HTTP requests to a backend API. This instance can then be imported and used to make API requests throughout the application.
 import axios from 'axios';
 const local_api = 'http://localhost:3000';
-const production_api = 'https://design-doodle.vercel.app/';
+const production_api = '';
 
 //retrieves an authentication token from the browser's local storage
 const token = localStorage.getItem('canva_token');
