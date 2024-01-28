@@ -64,7 +64,7 @@ class designController {
 				//checks if the design has an existing image URL. If it does, it deletes the old image from Cloudinary using its public ID. Then, it uploads the new image to Cloudinary and retrieves its URL.
 				if (old_design.image_url) {
 					const splitImage = old_design.image_url.split('/');
-					const imageFile = splitImage[splitImage?.length - 1];
+					const imageFile = splitImage[splitImage.length - 1];
 					const imageName = imageFile.split('.')[0];
 					await cloudinary.uploader.destroy(imageName);
 				}

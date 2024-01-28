@@ -72,7 +72,7 @@ const Home = () => {
 				<h2 className="text-xl py-6 font-semibold text-white">
 					Your recent designs
 				</h2>
-				{designs && (<div>
+				<div>
 					<Carousel
 						autoPlay={true}
 						infinite={true}
@@ -88,7 +88,7 @@ const Home = () => {
 							/>
 						))}
 					</Carousel>
-				</div>)}
+				</div>
 			</div>
 		</div>
 	);

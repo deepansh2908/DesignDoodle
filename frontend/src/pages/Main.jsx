@@ -206,6 +206,7 @@ const Main = () => {
 	//this function is responsible for creating a new shape component with predefined initial properties and adding them to the list of existing components.
 	const createShape = (name, type) => {
 		// Define initial style properties for the shape
+		//console.log("add shape fuhction")
 		const style = {
 			id: Date.now(),
 			name: name,
@@ -231,6 +232,7 @@ const Main = () => {
 	const add_image = (img) => {
 		setCurrentComponent('');
 		// Define initial style properties for the image component
+		//console.log("add image function")
 		const style = {
 			id: Date.now(),
 			name: 'image',
@@ -329,7 +331,7 @@ const Main = () => {
 		const get_design = async () => {
 			try {
 				const { data } = await api.get(`/api/user-design/${design_id}`);
-				console.log(data);
+				//console.log(data);
 				//design is an array of components
 				const { design } = data;
 
