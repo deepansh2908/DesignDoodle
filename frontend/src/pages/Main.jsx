@@ -331,7 +331,7 @@ const Main = () => {
 		const get_design = async () => {
 			try {
 				const { data } = await api.get(`/api/user-design/${design_id}`);
-				//console.log(data);
+				console.log(data);
 				//design is an array of components
 				const { design } = data;
 

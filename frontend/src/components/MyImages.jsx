@@ -21,6 +21,7 @@ const MyImages = ({ add_image }) => {
 					'/api/add-user-image',
 					formData
 				);
+				console.log(data);
 				// Update the images state with the newly uploaded image
 				setImages([...images, data.userImage]);
 				setLoader(false);
