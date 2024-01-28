@@ -24,7 +24,6 @@ if (process.env.NODE_ENV === 'local') {
 } else {
 	app.use(
 		cors({
-			origin: 'https://design-doodle.vercel.app/',
 			credentials: true,
 		})
 	);
