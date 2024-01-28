@@ -31,27 +31,33 @@ const Projects = ({ type, design_id }) => {
 		}
 	};
 	return (
-		<div className="h-[88vh] overflow-x-auto flex justify-start items-start scrollbar-hide w-full">
-			<div
-				className={
-					type
-						? 'grid grid-cols-2 gap-2 mt-5 w-full'
-						: 'grid grid-cols-4 gap-2 mt-5 w-full'
-				}
-			>
-				{designs?.map(
-					(d, i) =>
-						d._id !== design_id && (
-							<Item
-								key={i}
-								design={d}
-								type={type}
-								delete_design={delete_design}
-							/>
-						)
-				)}
+		designs ? <>
+			<div className="h-[88vh] overflow-x-auto flex justify-start items-start scrollbar-hide w-full">
+				<div
+					className={
+						type
+							? 'grid grid-cols-2 gap-2 mt-5 w-full'
+							: 'grid grid-cols-4 gap-2 mt-5 w-full'
+					}
+				>
+					{designs.map(
+						(d, i) =>
+							d._id !== design_id && (
+								<Item
+									key={i}
+									design={d}
+									type={type}
+									delete_design={delete_design}
+								/>
+							)
+					)}
+				</div>
 			</div>
-		</div>
+		</>
+			:
+			<>
+				<div>No projects present!</div>
+			</>
 	);
 };
 
