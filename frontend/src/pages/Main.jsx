@@ -334,7 +334,7 @@ const Main = () => {
 				const { design } = data;
 
 				//For each item in the design array (ie each component), certain properties and functions are added
-				for (let i = 0; i < design.length; i++) {
+				for (let i = 0; i < design?.length; i++) {
 					design[i].setCurrentComponent = (a) =>
 						setCurrentComponent(a);
 					design[i].moveElement = moveElement;
