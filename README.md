@@ -25,6 +25,10 @@
 * POST /api/user-register     registers a new user
 * POST /api/user-login     for user login
 
+## Want to try it out?
+* https://design-doodle.vercel.app/ (Work in progress)
+* Or just clone the repo on your machine and run this command in VS Code terminal (while in root directory) -> 'npm run dev'
+
 ## Live video demo
 
 
